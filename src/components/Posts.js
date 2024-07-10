@@ -39,7 +39,7 @@ const Posts = () => {
             </Row>
             <Row>
             {posts.map((post) => (
-                <p> 
+                <p key={post.id}> 
                     {post.title}
                     {post.body}
                 </p>
